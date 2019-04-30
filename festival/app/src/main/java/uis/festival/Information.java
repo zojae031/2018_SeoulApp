@@ -28,7 +28,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import uis.Communication.TranslateDialog;
-import uis.DataBase.BitmapDownloaderTask;
 import uis.DataBase.FestivalInformationVO;
 import uis.DataBase.Model;
 import uis.ImageUtil;
@@ -60,7 +59,7 @@ public class Information extends AppCompatActivity implements OnMapReadyCallback
     GoogleMap mMap;
 
     String homepgLink;
-    BitmapDownloaderTask task;
+
 
     @Override
     public void onBackPressed() {
@@ -71,8 +70,7 @@ public class Information extends AppCompatActivity implements OnMapReadyCallback
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        task.cancel(false);
-        task = null;
+
     }
 
     @Override
@@ -264,9 +262,6 @@ public class Information extends AppCompatActivity implements OnMapReadyCallback
 
         ImageUtil.setImageByGlide(getBaseContext(),Festival_Img,data.getMain_Img());
 
-//        Glide.with(getApplicationContext()).load(data.getMain_Img()).into(Festival_Img);
-//        task = new BitmapDownloaderTask(Festival_Img);
-//        task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, data.getMain_Img());
     }
 
     @Override
