@@ -1,5 +1,9 @@
 ﻿# Culture in Seoul
 
+### 어플리케이션 시연 동영상
+[![앱 시연 동영상](./festival/app/src/main/res/drawable/app_icon.png)](https://youtu.be/YlsC67fKLos)
+### (↑Click↑)
+
 1. 개요
 - 서울시의 다양한 행사, 축제 정보를 보기 쉽게 보여줌
 - 서울시에 숨어있는 다양한 문화행사, 축제를 장르, 지역별로 보여줌
@@ -18,3 +22,4 @@
  - ViewPager, Glide, Appbar, BottomNavigationBar, RecycleView 등을 이용한 UI 제작
  - AsyncTask를 이용한 비동기 파싱
  - 즐겨찾기 기능 (SQLite)
+
